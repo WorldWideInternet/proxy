@@ -1,42 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proxy-Like Example</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 20px;
-    }
+<html><head>
+    <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png">
+    <title>Art Class</title>
 
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: 1px solid #ccc;
-    }
-  </style>
-</head>
-<body>
-  <h1>Proxy-Like Example</h1>
+    <link rel="stylesheet" href="./css/master.css">
+    <script type="text/javascript" async="" src="https://hog.830008x.com/static/array.js"></script><script src="/uv/uv.bundle.js" charset="UTF-8"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="./js/preload.js"></script><link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css"><link href="https://cdn.jsdelivr.net/gh/ianlunn/hover/css/hover-min.css" rel="stylesheet"><script src="https://www.googletagmanager.com/gtag/js?id=G-66ZE075DLD" async=""></script><script src="https://arc.io/widget.min.js#mBnG5tq6" async=""></script>
+  <link href="https://gateway.arc.io" crossorigin="" rel="preconnect" id="arc-preconnect-gateway" data-arc-widget=""><link href="https://webseed.arc.io" crossorigin="" rel="preconnect" id="arc-preconnect-webseed" data-arc-widget=""><link href="https://static.arc.io/widget/js/core.js?5b7d6ea" rel="modulepreload" as="script" id="arc-preload-corejs" data-arc-widget=""><script src="https://static.arc.io/widget/js/core.js?5b7d6ea" type="module" async="" id="arc-corejs" data-arc-widget=""></script><script src="https://static.arc.io/widget/js/core-legacy.js?5b7d6ea" nomodule="" async="" id="arc-corejs-legacy" data-arc-widget=""></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script charset="utf-8" src="https://static.arc.io/widget/js/vendors~widget-ui.js?c9b0de53"></script><link rel="stylesheet" type="text/css" href="https://static.arc.io/widget/css/widget.css?5b7d6ea"><script charset="utf-8" src="https://static.arc.io/widget/js/widget-ui.js?5491c0b5"></script><script charset="utf-8" src="https://static.arc.io/widget/js/vendors~widget-sc-client.js?35fccb86"></script><script charset="utf-8" src="https://static.arc.io/widget/js/widget-sc-client.js?197dbd2e"></script><script src="https://unpkg.com/@filecoin-saturn/js-client@0.3.7/dist/strn.min.js"></script><script charset="utf-8" src="https://static.arc.io/widget/js/chunk-0565ec8a.js?29c511a1"></script><script charset="utf-8" src="https://static.arc.io/widget/js/chunk-2d2088b3.js?6fe097ff"></script><script charset="utf-8" src="https://static.arc.io/widget/js/chunk-2d0cf2b3.js?d98d2542"></script></head>
 
-  <form onsubmit="loadWebsite(); return false;">
-    <label for="websiteUrl">Enter Website URL:</label>
-    <input type="url" id="websiteUrl" placeholder="https://www.google.com" required>
-    <button type="submit">Load</button>
-  </form>
+  <body theme="main"><iframe id="arc-broker" src="https://core.arc.io/broker.html?5b7d6ea" title="Arc.io Broker Iframe" sandbox="allow-scripts allow-same-origin allow-top-navigation-by-user-activation" loading="eager" data-arc-widget="" style="opacity: 0 !important; width: 0px !important; height: 0px !important; border: none !important; top: -9999px !important; left: -9999px !important; position: fixed !important; visibility: hidden !important; user-select: none !important; display: none;"></iframe>
+    <nav>
+      <div class="logo">
+        <img src="./assets/images/icon.png" alt="Logo" draggable="false">
+        <h1>Art Class</h1>
+      </div>
 
-  <iframe id="embeddedFrame" src="" frameborder="0"></iframe>
+      <p id="time"></p>
 
-  <script>
-    function loadWebsite() {
-      const websiteUrl = document.getElementById('websiteUrl').value;
-      if (websiteUrl) {
-        const iframe = document.getElementById('embeddedFrame');
-        iframe.src = `https://cors-anywhere.herokuapp.com/${websiteUrl}`;
-      }
-    }
-  </script>
-</body>
-</html>
+      <div class="navitems">
+        <div class="navitem"><a href="/index.html">Home</a></div>
+        <div class="navitem"><a href="/gs.html">Games</a></div>
+        <div class="navitem"><a href="/apps.html">Apps</a></div>
+        <div class="navitem"><a href="/emulator.html">Emulator</a></div>
+        <div class="navitem"><a selected="" href="/search.html">Search</a></div>
+      </div>
+    </nav>
+
+    <div class="center-container">
+      <h1>Search</h1>
+      <input class="pxyinput" type="text" placeholder="Search...">
+    </div>
+    <iframe class="frame"></iframe>
+  
+
+  <script src="./js/index.js"></script>
+  <script src="./js/search.js"></script>
+
+<div data-v-006c9b03="" id="arc-widget-container" style="height: 2141px;"><div data-v-006c9b03="" id="arc-widget" class="intrinsic-ignore"><iframe data-v-28716f3d="" data-v-006c9b03="" frameborder="0" title="Arc.io Widget Launcher" class="arc-iframe is-visible" id="arc-widget-launcher-iframe"></iframe><iframe data-v-d0762f48="" data-v-006c9b03="" frameborder="0" title="Arc.io Widget Body" class="arc-iframe view-default" id="arc-popper-iframe" style="display: none;"></iframe><div data-v-006c9b03="" id="arc-page-shadow" style="opacity: 0;"></div></div></div></body></html>
